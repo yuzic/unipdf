@@ -47,7 +47,6 @@ func (e *Extractor) ExtractPageText() (*PageText, int, int, error) {
 		return nil, numChars, numMisses, err
 	}
 	pt.computeViews()
-	procBuf(pt)
 
 	return pt, numChars, numMisses, err
 }
